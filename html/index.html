@@ -1,0 +1,26 @@
+<html>
+
+<link rel="stylesheet" type="text/css" href="../styles/estilo.css">
+
+	<div class="sidenav">
+	  <a href="#">About</a>
+	  <a href="#">Services</a>
+	  <a href="#">Clients</a>
+	  <a href="#">Contact</a>
+	</div>
+
+	<div class="main">
+		<img src="../svgsrc/test.svg" id="imgs" class="imagen"/>
+
+		<script> 
+
+			setInterval(function() {
+				document.getElementById("imgs").src = "../svgsrc/test.svg?time=" + new Date().getTime();
+				console.log(document.getElementById("imgs").src);
+			}, 1000);
+
+  		</script>
+
+	</div>
+
+</html>

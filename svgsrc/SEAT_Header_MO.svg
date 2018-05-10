@@ -1,0 +1,60 @@
+<rect id="rect_Header" fill="url(#grad1)" stroke="none" width="1920" height="90" />
+<polygon points="0,0 0,90 170,90 200,0" fill="white" stroke="none" rx="8" ry="8" />
+<image id="logo_seat" fill="rgb(0, 0, 0)" stroke="none" x="10" y="0" width="165" height="90" xlink:href="../images/seat_logo.svg"/>
+<text id="text_Header_title" font-family="Arial" font-weight="bold" font-size="33" x="215" y="57" fill="white">Header</text>
+<g id="Menu_Header" transform="matrix(1, 0, 0, 1, -170, 0)">
+    <a id="a_Instalaciones_Link">
+        <?gefasoft <attrrepl attr = "xlink:href">
+                <jsfncall name = "SvgLinktoNode">
+                    <jsexpr quotes = "0">2565</jsexpr>
+                </jsfncall>
+            </attrrepl>?>
+        <g id="nav_bt_1" onmouseover="hoverNavbarBtn(1,1,1)" onmouseout="hoverNavbarBtn(0,1,1)" transform="matrix(1 0 0 1 -210 0)">
+            <rect id="nav_bt_1_rect" x="1330" y="0" width="150" height="92" stroke="none" fill="white" fill-opacity="0.1" />
+            <rect id="nav_bt_1_footer" x="1330" y="83" width="150" height="7" stroke="none" fill="#CCCCCC" />
+            <polygon id="nav_bt_1_tri" points="1405,77 1398,84 1412,84" fill="#C80000" stroke="none" display="none" />
+            <image id="nav_bt_1_img" stroke="none" x="1390" width="30" height="30" xlink:href="../images/Robot Filled.PNG" y="7" />
+            <text id="nav_bt_1_txt" font-family="Arial" font-size="30" x="1405" y="67" fill="white" letter-spacing="1.6px" text-anchor="middle">Instal.</text>
+        </g>
+    </a>
+    <a id="a_Flujos_Link">
+        <?gefasoft <attrrepl attr = "xlink:href">
+                <jsfncall name = "SvgLinktoNode">
+                    <jsexpr quotes = "0">2585</jsexpr>
+                </jsfncall>
+            </attrrepl>?>
+        <g id="nav_bt_2" onmouseover="hoverNavbarBtn(1,2,1)" onmouseout="hoverNavbarBtn(0,2,1)" transform="matrix(1 0 0 1 -210 0)">
+            <rect id="nav_bt_2_rect" x="1490" y="0" width="150" height="92" stroke="none" fill="white" fill-opacity="0.1" />
+            <rect id="nav_bt_2_footer" x="1490" y="83" width="150" height="7" stroke="none" fill="#CCCCCC" />
+            <polygon id="nav_bt_2_tri" points="1565,77 1558,84 1573,84" fill="#C80000" stroke="none" display="none" />
+            <image id="nav_bt_2_img" stroke="none" x="1553" width="26" height="26" xlink:href="../images/Workflow.PNG" y="10" />
+            <text id="nav_bt_2_txt" font-family="Arial" font-size="30" x="1565" y="67" fill="white" letter-spacing="1.2px" text-anchor="middle">Flujos</text>
+        </g>
+    </a>
+	<a id="a_Fis_Link">
+		<?gefasoft <attrrepl attr = "xlink:href">
+				<jsfncall name = "SvgLinktoNode">
+					<jsexpr quotes = "0">3154</jsexpr>
+				</jsfncall>
+			</attrrepl>?>
+		<g id="nav_bt_3" onmouseover="hoverNavbarBtn(1,3,1)" onmouseout="hoverNavbarBtn(0,3,1)" transform="matrix(1 0 0 1 -225 0)">
+			<rect id="nav_bt_3_rect" x="1665" y="0" width="150" height="92" stroke="none" fill="white" fill-opacity="0.1" />
+			<rect id="nav_bt_3_footer" x="1665" y="83" width="150" height="7" stroke="none" fill="#CCCCCC" />
+			<polygon id="nav_bt_3_tri" points="1740,77 1733,84 1747,84" fill="#C80000" stroke="none" display="none" />
+			<image id="nav_bt_3_img" stroke="none" x="1725" width="27" height="27" xlink:href="../images/FIS.PNG" y="9" />
+			<text id="nav_bt_3_txt" font-family="Arial" font-size="30" x="1740" y="67" fill="white" letter-spacing="1.2px" text-anchor="middle">Fis</text>
+		</g>
+	</a>
+    <g id="g_Legendbutton" onclick="switchDisp('g_Legend')" style="cursor:pointer" transform="matrix(1 0 0 1 50 15)" display="none">
+        <rect id="nav_bt_4_rect" x="1560" y="7.5" width="50" height="45" rx="2" ry="2" stroke="none" fill="white" fill-opacity="0.3"/>
+        <text id="nav_bt_4_txt" font-family="Arial" font-size="30" x="1585" y="40" fill="white" letter-spacing="1.2px" text-anchor="middle">?</text>
+    </g>
+</g>
+
+<polygon points="1535,0 1710,0 1680,90 1505,90" fill="white" stroke="none" />
+<image id="logo_emp" fill="rgb(0, 0, 0)" stroke="none" x="1485" y="-30" width="235" height="150" xlink:href="../images/logo_emp.svg"/>
+
+<g id="g_datetime">
+    <text id="text_Date" x="1805" y="77" font-size="20" font-family="Arial" text-anchor="middle" fill="white">Martes, 26 Julio 2016</text>
+    <text id="text_Time" x="1805" y="47" font-size="45" font-weight="bold" font-family="Arial" text-anchor="middle" fill="white">10:22:50</text>
+</g>

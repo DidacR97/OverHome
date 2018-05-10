@@ -1,0 +1,11 @@
+<rect id="rect_Header" fill="url(#grad1)" stroke="none" width="1920" height="90" />
+<polygon points="0,0 0,90 170,90 200,0" fill="white" stroke="none" rx="8" ry="8" />
+<image id="logo_seat" fill="rgb(0, 0, 0)" stroke="none" x="10" y="0" width="165" height="90" xlink:href="../images/seat_logo.svg"/>
+<text id="text_Header_title" font-family="Arial" font-weight="bold" font-size="33" x="215" y="57" fill="white">Header</text>
+<polygon points="1535,0 1710,0 1680,90 1505,90" fill="white" stroke="none" />
+<image id="logo_emp" fill="rgb(0, 0, 0)" stroke="none" x="1485" y="-30" width="235" height="150" xlink:href="../images/logo_emp.svg"/>
+
+<g id="g_datetime">
+    <text id="text_Date" x="1805" y="77" font-size="20" font-family="Arial" text-anchor="middle" fill="white">Martes, 26 Julio 2016</text>
+    <text id="text_Time" x="1805" y="47" font-size="45" font-weight="bold" font-family="Arial" text-anchor="middle" fill="white">10:22:50</text>
+</g>
