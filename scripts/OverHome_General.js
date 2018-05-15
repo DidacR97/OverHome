@@ -53,12 +53,12 @@ function actDateTime(option) {
 
     if(opt == 1){
     	//console.log('day+month 1: ' + dayDisp + ', ' + aryMonth[month - 1] + ', ' + timeVal);
-    	setEleData("text_Date_day", dayDisp);
-    	setEleData("text_Date_month", aryMonth[month - 1]);
+    	/*setEleData("text_Date_day", dayDisp);
+    	setEleData("text_Date_month", aryMonth[month - 1]);*/
     	setEleData("text_Time", timeVal);
     }else{
     	//console.log('day+month 0: ' + dateVal + ', ' + timeVal);
-    	setEleData("text_Date", dateVal);
+    	/*setEleData("text_Date", dateVal);*/
     	setEleData("text_Time", timeVal);	
     }
 

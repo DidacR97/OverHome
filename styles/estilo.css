@@ -1,22 +1,60 @@
-body{
-    margin: 0;
-    padding: 0;
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
 }
 
-.sidenav {
-    height: 100%; /* Full-height: remove this if you want "auto" height */
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+header{
+    height: 10%;
+    background: red; /* For browsers that do not support gradients */
+    background: linear-gradient(#505050, white); /* Standard syntax (must be last) */
+    border: 1px solid black;
+    width: 100%;
+}
+
+#imgHeader{
+    height: 100%;
+    width: 20%;
+    float:left;
+}
+
+#pageTitle_name{
+    margin-left: 20%;
+    width:60%;
+    position: relative;
+    top:25%;
+    font-family: Arial;
+    padding-top:0.2%;
+}
+#pageTitle_hour{
+    margin-right: : 0%;
+    width:20%;
+    position: relative;
+    top:-30%;
+    font-family: Arial;
+    padding-top:0.2%;
+    float:right;
+}
+
+.sidenav_left {
+    height: 85%; /* Full-height: remove this if you want "auto" height */
     width: 20%; /* Set the width of the sidebar */
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    z-index: 1; /* Stay on top */
-    top: 0; /* Stay at the top */
-    left: 0;
-    background-color: #111; /* Black */
+    position: relative; /* Fixed Sidebar (stay in place on scroll) */
+    background-color: #CACACA;
+    border: 1px solid black;
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 20px;
+    float: left;
 }
 
 /* The navigation menu links */
-.sidenav a {
+
+.sidenav_left a {
     padding: 6px 8px 6px 16px;
     text-decoration: none;
     font-size: 25px;
@@ -25,16 +63,17 @@ body{
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
+.sidenav_left a:hover {
     color: #f1f1f1;
 }
 
 /* Style page content */
-.main {
+.main_svg {
     margin:auto;
-    float:right;
     padding: 0px 0px;
-    width: 80%;
+    width: 60%;
+    float: left;
+    height: 90%;
 }
 
 .imagen {
@@ -42,8 +81,34 @@ body{
     height: 100%;
 }
 
+.sidenav_right {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 20%; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    background-color: #CACACA;
+    border: 1px solid black;
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;*/
+    margin-left: : 0%;
+    float: right;
+}
+
+/* The navigation menu links */
+.sidenav_right a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav_right a:hover {
+    color: #f1f1f1;
+}
+
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+    .sidenav_left {padding-top: 15px;}
+    .sidenav_left a {font-size: 18px;}
 }
