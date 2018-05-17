@@ -7,5 +7,8 @@
 
 	<g id="kitchen" transform="matrix(2 0 0 2 400 40)">
 		<rect id="contour" x="125" y="0" height="500" width="325" stroke-width="3" stroke="black"  fill="white"/>
+
+		<line id="door" x1="145" y1="490" x2="145" y2="510" stroke-width="2" stroke="black"/>
+		<line id="door" x1="225" y1="490" x2="225" y2="510" stroke-width="2" stroke="black"/>
 	</g>
 </svg>
