@@ -29,5 +29,11 @@
 			<line id="door" x1="900" y1="490" x2="900" y2="510" stroke-width="2" stroke="black"/>
 			<line id="door" x1="980" y1="490" x2="980" y2="510" stroke-width="2" stroke="black"/>
 		</g>
+
+		<rect x="-3" y="60" height="80" width="3" fill="white" stroke-width="1" stroke="black"/>
+		<rect x="-3" y="600" height="140" width="3" fill="white" stroke-width="1" stroke="black"/>
+		<rect x="0" y="0" height="0" width="0" fill="white" stroke-width="2" stroke="white"/>
+		<rect x="0" y="0" height="0" width="0" fill="white" stroke-width="2" stroke="white"/>
+		<rect x="0" y="0" height="0" width="0" fill="white" stroke-width="2" stroke="white"/>
 	</g>
 </svg>
