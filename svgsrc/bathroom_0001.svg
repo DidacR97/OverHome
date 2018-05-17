@@ -6,7 +6,7 @@
 	</g>
 
 	<g id="bathroom" transform="matrix(2.8 0 0 2.8 400 40)">
-		<rect id="contour" x="-20" y="2.5" height="350" width="450" stroke-width="3" stroke="black"  fill="white"/>
+		<rect id="contour" x="-20" y="2.5" height="350" width="450" stroke-width="3" stroke="black"  fill="#FFEEE2"/>
 
 		<line id="door" x1="422.5" y1="135" x2="437.5" y2="135" stroke-width="2" stroke="black"/>
 		<line id="door" x1="422.5" y1="215" x2="437.5" y2="215" stroke-width="2" stroke="black"/>

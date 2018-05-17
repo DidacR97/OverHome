@@ -6,8 +6,8 @@
 	</g>
 
 	<g id="dinningroom" transform="matrix(1 0 0 1 650 40)">
-		<rect x="0" y="0" height="1000" width="425" fill="white"/>
-		<rect x="425" y="500" height="500" width="325" fill="white"/>
+		<rect x="0" y="0" height="1000" width="425" fill="#FFEEE2"/>
+		<rect x="425" y="500" height="500" width="325" fill="#FFEEE2"/>
 
 		<line x1="0" y1="0" x2="425" y2="0" stroke-width="3" stroke="black"/>
 		<line x1="425" y1="0" x2="425" y2="500" stroke-width="3" stroke="black"/>
