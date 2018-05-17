@@ -5,7 +5,7 @@
 		<!--<rect id="rect_Background" fill="#D0D0D0" width="1080" height="1080"/>-->
 	</g>
 
-	<g id="bathroom" transform="matrix(2.8 0 0 2.8 360 45)">
+	<g id="bathroom" transform="matrix(3.9 0 0 3.9 100 35)">
 		<rect id="contour" x="0" y="0" height="350" width="450" stroke-width="3" stroke="black"  fill="#FFEEE2"/>
 
 		<line id="door" x1="440" y1="135" x2="460" y2="135" stroke-width="2" stroke="black"/>
