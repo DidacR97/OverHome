@@ -1,0 +1,2 @@
+Insert Zone
+INSERT INTO oh_zone(NAME,DESCRIPTION,SVG_NAME) VALUES('','','')
