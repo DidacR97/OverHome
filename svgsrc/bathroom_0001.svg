@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<svg xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1920 1080">
+<svg xmlns:ev="http://www.w3.org/2001/xml-events" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 1920 1440">
 	<g id="l_Background"><?gdlayer visible=1?>
 		<!--<rect id="rect_Background" fill="#D0D0D0" width="1080" height="1080"/>-->
 	</g>
 
-	<g id="bathroom" transform="matrix(2.8 0 0 2.8 400 40)">
-		<rect id="contour" x="-20" y="2.5" height="350" width="450" stroke-width="3" stroke="black"  fill="#FFEEE2"/>
+	<g id="bathroom" transform="matrix(3.9 0 0 3.9 100 35)">
+		<rect id="contour" x="0" y="0" height="350" width="450" stroke-width="3" stroke="black"  fill="#FFEEE2"/>
 
-		<line id="door" x1="422.5" y1="135" x2="437.5" y2="135" stroke-width="2" stroke="black"/>
-		<line id="door" x1="422.5" y1="215" x2="437.5" y2="215" stroke-width="2" stroke="black"/>
+		<line id="door" x1="440" y1="135" x2="460" y2="135" stroke-width="2" stroke="black"/>
+		<line id="door" x1="440" y1="215" x2="460" y2="215" stroke-width="2" stroke="black"/>
+
+		<rect id="window" x="-3" y="60" height="80" width="3" fill="cyan" stroke-width="1" stroke="black"/>
 	</g>
 </svg>
