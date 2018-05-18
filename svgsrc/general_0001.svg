@@ -33,12 +33,28 @@
 		<g id="bedroom_0001" transform="matrix(1 0 0 1 0 0)">
 			<rect id="contour" x="0" y="350" height="650" width="450" stroke-width="3" stroke="black"  fill="#FFEEE2"/>
 
+			<rect id="table1" x="75" y="350" height="50" width="75" stroke-width="3" stroke="black"  fill="#FFEEE2"/>
+
 			<g id="bedroom_0001_dinningroom_door">
 				<line id="door" x1="440" y1="360" x2="460" y2="360" stroke-width="2" stroke="black"/>
 				<line id="door" x1="440" y1="440" x2="460" y2="440" stroke-width="2" stroke="black"/>
 			</g>
 
-			<rect id="window" x="-3" y="600" height="140" width="3" fill="cyan" stroke-width="1" stroke="black"/>
+			<rect id="table2" x="400" y="600" height="120" width="50" stroke-width="3" stroke="black"  fill="#FFEEE2"/>
+
+			<rect id="table3" x="180" y="945" height="55" width="270" stroke-width="3" stroke="black"  fill="#FFEEE2"/>
+
+			<rect id="table4" x="0" y="760" height="60" width="50" stroke-width="3" stroke="black"  fill="#FFEEE2"/>
+
+			<g id="bed">
+				<rect id="bed" x="0" y="620" height="140" width="220" stroke-width="3" stroke="black"  fill="#FFEEE2"/>
+				<line id="bed" x1="60" y1="620" x2="40" y2="760" stroke-width="3" stroke="black"/>
+			</g>
+
+			<rect id="window" x="-3" y="600" height="180" width="3" fill="cyan" stroke-width="1" stroke="black"/>
+
+			<rect id="table5" x="0" y="560" height="60" width="50" stroke-width="3" stroke="black"  fill="#FFEEE2"/>
+
 		</g>
 
 		<g id="kitchen_0001" transform="matrix(1 0 0 1 0 0)">
