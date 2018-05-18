@@ -5,12 +5,14 @@
 		<!--<rect id="rect_Background" fill="#D0D0D0" width="1080" height="1080"/>-->
 	</g>
 
-	<g id="kitchen" transform="matrix(2.75 0 0 2.75 500 35)">
+	<g id="kitchen_0001" transform="matrix(2.75 0 0 2.75 500 35)">
 		<rect id="contour" x="0" y="0" height="500" width="325" stroke-width="3" stroke="black"  fill="#FFEEE2"/>
 
-		<line id="door" x1="20" y1="490" x2="20" y2="510" stroke-width="2" stroke="black"/>
-		<line id="door" x1="100" y1="490" x2="100" y2="510" stroke-width="2" stroke="black"/>
-
+		<g id="kitchen_0001_dinningroom_door">
+			<line id="door" x1="20" y1="490" x2="20" y2="510" stroke-width="2" stroke="black"/>
+			<line id="door" x1="100" y1="490" x2="100" y2="510" stroke-width="2" stroke="black"/>
+		</g>
+		
 		<rect id="window" x="325" y="360" height="80" width="3" fill="cyan" stroke-width="1" stroke="black"/>
 	</g>
 </svg>
