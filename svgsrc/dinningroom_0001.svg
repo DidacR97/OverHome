@@ -6,19 +6,19 @@
 	</g>
 
 	<g id="dinningroom_0001" transform="matrix(1.4 0 0 1.4 450 20)">
-		<rect x="0" y="0" height="1000" width="425" fill="#FFEEE2"/>
+		<rect x="0" y="0" height="1000" width="470" fill="#FFEEE2"/>
 		<rect x="425" y="500" height="500" width="325" fill="#FFEEE2"/>
 
-		<line x1="0" y1="0" x2="425" y2="0" stroke-width="3" stroke="black"/>
-		<line x1="425" y1="0" x2="425" y2="500" stroke-width="3" stroke="black"/>
-		<line x1="425" y1="500" x2="750" y2="500" stroke-width="3" stroke="black"/>
+		<line x1="0" y1="0" x2="470" y2="0" stroke-width="3" stroke="black"/>
+		<line x1="470" y1="0" x2="470" y2="500" stroke-width="3" stroke="black"/>
+		<line x1="470" y1="500" x2="750" y2="500" stroke-width="3" stroke="black"/>
 		<line x1="750" y1="500" x2="750" y2="1000" stroke-width="3" stroke="black"/>
 		<line x1="0" y1="1000" x2="750" y2="1000" stroke-width="3" stroke="black"/>
 		<line x1="0" y1="0" x2="0" y2="1000" stroke-width="3" stroke="black"/>
 
 		<g id="dinningroom_0001_exit_door">
-			<line id="exit_Door" x1="335" y1="-10" x2="335" y2="10" stroke-width="2" stroke="black"/>
-			<line id="exit_Door" x1="415" y1="-10" x2="415" y2="10" stroke-width="2" stroke="black"/>
+			<line id="exit_Door" x1="375" y1="-10" x2="375" y2="10" stroke-width="2" stroke="black"/>
+			<line id="exit_Door" x1="455" y1="-10" x2="455" y2="10" stroke-width="2" stroke="black"/>
 		</g>
 
 		<g id="dinningroom_0001_bathroom_door">
@@ -32,8 +32,8 @@
 		</g>
 
 		<g id="dinningroom_0001_kitchen_door">
-			<line id="kitchen_Door" x1="450" y1="490" x2="450" y2="510" stroke-width="2" stroke="black"/>
-			<line id="kitchen_Door" x1="530" y1="490" x2="530" y2="510" stroke-width="2" stroke="black"/>
+			<line id="kitchen_Door" x1="500" y1="490" x2="500" y2="510" stroke-width="2" stroke="black"/>
+			<line id="kitchen_Door" x1="580" y1="490" x2="580" y2="510" stroke-width="2" stroke="black"/>
 		</g>
 
 		<g id="dinningroom_0001_windows">
