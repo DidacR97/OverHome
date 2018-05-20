@@ -7,7 +7,7 @@
 
 	<g id="general_0001" transform="matrix(1.4 0 0 1.4 125 20)">
 		<rect id="contour" x="0" y="0" height="1000" width="1200" stroke-width="3" stroke="black"  fill="#FFEEE2"/>
-		
+
 		<g id="bathroom_0001" transform="matrix(1 0 0 1 0 0)">
 			<rect id="contour" x="0" y="0" height="350" width="450" stroke-width="3" stroke="black"  fill="#FFEEE2"/>
 
@@ -78,7 +78,11 @@
 
 			<rect id="shelf2" x="880" y="210" height="190" width="40" stroke-width="3" stroke="black"  fill="#FFEEE2"/>
 
+			<rect id="table" x="925" y="600" height="150" width="150" stroke-width="3" stroke="black"  fill="#FFEEE2"/>
+
 			<rect id="table" x="600" y="560" height="140" width="140" stroke-width="3" stroke="black"  fill="#FFEEE2"/>
+
+			<ellipse id="table2" cx="525" cy="820" rx="35" ry="35" stroke-width="3" stroke="black"  fill="#FFEEE2"/>
 
 			<rect id="window1" x="550" y="1000" height="3" width="200" fill="cyan" stroke-width="1" stroke="black"/>
 			<rect id="window2" x="850" y="1000" height="3" width="80" fill="cyan" stroke-width="1" stroke="black"/>
