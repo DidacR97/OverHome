@@ -40,6 +40,38 @@
 			<rect id="window1" x="550" y="1000" height="3" width="80" fill="cyan" stroke-width="1" stroke="black"/>
 			<rect id="window2" x="350" y="1000" height="3" width="80" fill="cyan" stroke-width="1" stroke="black"/>
 			<rect id="window3" x="50" y="1000" height="3" width="200" fill="cyan" stroke-width="1" stroke="black"/>
+
+			<!--Nuevo-->
+			<g id="general_0001_forniture" transform="matrix(1 0 0 1 -450 0)">
+				<rect id="shelf1" x="490" y="0" height="40" width="220" stroke-width="3" stroke="black"  fill="#FFEEE2"/>
+
+				<rect id="shelf2" x="880" y="210" height="190" width="40" stroke-width="3" stroke="black"  fill="#FFEEE2"/>
+
+				<g id="general_0001_table1">
+					<rect id="table1" x="935" y="600" height="150" width="150" stroke-width="3" stroke="black"  fill="#FFEEE2"/>
+					<rect id="chair1" x="985" y="550" height="50" width="50" stroke-width="2" stroke="black"  fill="#FFEEE2"/>
+					<rect id="chair2" x="1085" y="650" height="50" width="50" stroke-width="2" stroke="black"  fill="#FFEEE2"/>
+					<rect id="chair3" x="985" y="750" height="50" width="50" stroke-width="2" stroke="black"  fill="#FFEEE2"/>
+					<rect id="chair4" x="885" y="650" height="50" width="50" stroke-width="2" stroke="black"  fill="#FFEEE2"/>
+				</g>
+
+				<g id="general_0001_armchair">
+					<rect id="armchair" x="625" y="755" height="105" width="110" stroke-width="2" stroke="black"  fill="#FFEEE2"/>
+					<line id="pillow" x1="715" y1="755" x2="715" y2="835" stroke-width="2" stroke="black"/>
+					<line id="pillow" x1="645" y1="835" x2="715" y2="835" stroke-width="2" stroke="black"/>
+					<line id="pillow" x1="645" y1="755" x2="645" y2="835" stroke-width="2" stroke="black"/>
+				</g>
+
+				<ellipse id="table2" cx="525" cy="820" rx="35" ry="35" stroke-width="3" stroke="black"  fill="#FFEEE2"/>
+
+				<rect id="table3" x="610" y="590" height="100" width="100" stroke-width="3" stroke="black"  fill="#FFEEE2"/>
+
+				<g id="general_0001_sofa">
+					<rect id="sofa" x="450" y="570" height="175" width="110" stroke-width="2" stroke="black"  fill="#FFEEE2"/>
+					<line id="pillow" x1="470" y1="590" x2="560" y2="590" stroke-width="2" stroke="black"/>
+					<line id="pillow" x1="470" y1="590" x2="470" y2="745" stroke-width="2" stroke="black"/>
+				</g>
+			</g>
 		</g>
 	</g>
 </svg>
