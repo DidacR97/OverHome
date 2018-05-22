@@ -1,5 +1,9 @@
 Insert Zone
-INSERT INTO oh_zone(NAME,DESCRIPTION,SVG_NAME) VALUES('','','')
+INSERT INTO oh_zone(NAME,DESCRIPTION,SVG_NAME) VALUES('general_0001','General plane','general_0001.svg')
+INSERT INTO oh_zone(NAME,DESCRIPTION,SVG_NAME) VALUES('bathroom_0001','Bathroom','bathroom_0001.svg')
+INSERT INTO oh_zone(NAME,DESCRIPTION,SVG_NAME) VALUES('bedroom_0001','Bedroom','bedroom_0001.svg')
+INSERT INTO oh_zone(NAME,DESCRIPTION,SVG_NAME) VALUES('dinningroom_0001','Dinningroom','dinningroom_0001.svg')
+INSERT INTO oh_zone(NAME,DESCRIPTION,SVG_NAME) VALUES('kitchen_0001','Kitchen','kitchen_0001.svg')
 
 Insert User
 INSERT INTO OH_USER(NAME,PASSWORD) VALUES('','')
