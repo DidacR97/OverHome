@@ -8,7 +8,7 @@ import java.util.logging.SimpleFormatter;
 
 public class UDPServer {
 
-    public static void start_UPD_Server(String args[]) {
+    public static String start_UPD_Server(String args[]) {
         if (args.length == 0) usage();
 
         String logFilePath = "C:\\bin\\logs\\ServerUDP.log";
@@ -27,32 +27,31 @@ public class UDPServer {
 
 
             DatagramSocket socketUDP = new DatagramSocket(Integer.valueOf(args[0]));
-            byte[] bufer = new byte[1000];
+            byte[] buffer = new byte[1000];
 
             System.out.println("Listening packets from port: " + args[0] + "...");
 
-            while (true) {
-                // Build DatagramPacket
-                DatagramPacket datagramPacket = new DatagramPacket(bufer, bufer.length);
+            // Build DatagramPacket
+            DatagramPacket datagramPacket = new DatagramPacket(buffer, buffer.length);
 
-                // Read DatagramSocket
-                socketUDP.receive(datagramPacket);
+            // Read DatagramSocket
+            socketUDP.receive(datagramPacket);
 
-                String debug = "\n------------MESSAGE RECIVED-------------\n" +
-                        "Datagram recived from host: " + datagramPacket.getAddress() + "\n" +
-                        "remote port: " + datagramPacket.getPort() + "\n" +
-                        "Content recived: " + new String(datagramPacket.getData()) + "\n";
+            String debug = "\n------------MESSAGE RECIVED-------------\n" +
+                    "Datagram recived from host: " + datagramPacket.getAddress() + "\n" +
+                    "remote port: " + datagramPacket.getPort() + "\n" +
+                    "Content recived: " + new String(datagramPacket.getData()) + "\n";
 
-                logger.info(debug);
+            logger.info(debug);
 
-            }
+            return new String(datagramPacket.getData());
 
         } catch (SocketException e) {
             System.out.println("Socket: " + e.getMessage());
         } catch (IOException e) {
-            System.out.println("IO: " + e.getMessage());
+            System.out.println("IO: " + e.getMessage() + ", couldn't initiate logging in " + logFilePath);
         }
-
+        return "Server error!!";
     }
 
     private static void usage(){
@@ -60,7 +59,6 @@ public class UDPServer {
         System.out.println("Error: Missing Arguments!");
         System.out.println("Arguments should be as follows");
         System.out.println("[Port]");
-
     }
 
 }
