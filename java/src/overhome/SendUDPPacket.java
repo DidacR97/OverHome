@@ -1,6 +1,6 @@
 import com.overhome.UDPClient;
 
-public class Main {
+public class SendUDPPacket {
 
     public static void main(String[] args) {
 
