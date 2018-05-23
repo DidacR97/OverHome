@@ -1,6 +1,6 @@
 import com.overhome.UDPServer;
 
-public class Main {
+public class StartUDPServer {
 
     public static void main(String[] args) {
 
