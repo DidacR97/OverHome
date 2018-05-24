@@ -22,6 +22,8 @@ while True:
         if (inputValue == True):
             GPIO.output(18, GPIO.LOW)
             print("Main_Light Zone 4 OFF")
+            sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM) # UDP
+            sock.sendto(bytes(MESSAGE, "utf-8"), (UDP_IP, UDP_PORT))
             time.sleep(0.3)
             break
 GPIO.cleanup()
