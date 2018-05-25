@@ -19,21 +19,25 @@
 		<g id="dinningroom_0001_exit_door">
 			<line id="exit_Door" x1="375" y1="-10" x2="375" y2="10" stroke-width="2" stroke="black"/>
 			<line id="exit_Door" x1="455" y1="-10" x2="455" y2="10" stroke-width="2" stroke="black"/>
+			<text id="exit_Door" x="400" y="30" font-size="28" font-family="arial" fill="black">02</text>
 		</g>
 
 		<g id="dinningroom_0001_bathroom_door">
 			<line id="bathroom_Door" x1="-10" y1="135" x2="10" y2="135" stroke-width="2" stroke="black"/>
 			<line id="bathroom_Door" x1="-10" y1="215" x2="10" y2="215" stroke-width="2" stroke="black"/>
+			<text id="bathroom_Door" x="10" y="185" font-size="28" font-family="arial" fill="black">05</text>
 		</g>
 
 		<g id="dinningroom_0001_bedroom_door">
 			<line id="bedroom_Door" x1="-10" y1="360" x2="10" y2="360" stroke-width="2" stroke="black"/>
 			<line id="bedroom_Door" x1="-10" y1="440" x2="10" y2="440" stroke-width="2" stroke="black"/>
+			<text id="bedroom_Door" x="10" y="410" font-size="28" font-family="arial" fill="black">04</text>
 		</g>
 
 		<g id="dinningroom_0001_kitchen_door">
 			<line id="kitchen_Door" x1="500" y1="490" x2="500" y2="510" stroke-width="2" stroke="black"/>
 			<line id="kitchen_Door" x1="580" y1="490" x2="580" y2="510" stroke-width="2" stroke="black"/>
+			<text id="kitchen_Door" x="525" y="530" font-size="28" font-family="arial" fill="black">03</text>
 		</g>
 
 		<g id="dinningroom_0001_windows">
@@ -72,6 +76,9 @@
 					<line id="pillow" x1="470" y1="590" x2="470" y2="745" stroke-width="2" stroke="black"/>
 				</g>
 			</g>
+
+			<text id="Main_light" x="300" y="550" font-size="28" font-family="arial" fill="black">01</text>
+
 		</g>
 	</g>
 </svg>

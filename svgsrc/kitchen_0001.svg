@@ -8,9 +8,12 @@
 	<g id="kitchen_0001" transform="matrix(2.9 0 0 2.9 -2100 40)">
 		<rect id="contour" x="920" y="0" height="470" width="280" stroke-width="1.5" stroke="black"  fill="#FFEEE2"/>
 
+		<text id="fridge" x="937.5" y="30" font-size="18" font-family="arial" fill="black">07</text>
+
 		<g id="kitchen_0001_kitchen_countertop">
 			<rect id="kitchen_countertop" x="980" y="0" height="60" width="150" stroke-width="1.5" stroke="black"  fill="#FFEEE2"/>
 			<rect id="kitchen_countertop" x="1130" y="0" height="280" width="70" stroke-width="1.5" stroke="black"  fill="#FFEEE2"/>
+			<text id="oven" x="1150" y="200" font-size="18" font-family="arial" fill="black">08</text>
 		</g>
 
 		<rect id="window" x="1201" y="350" height="80" width="3" fill="cyan" stroke-width="0.5" stroke="black"/>
@@ -24,6 +27,10 @@
 		<g id="kitchen_0001_dinningroom_door">
 			<line id="door" x1="940" y1="460" x2="940" y2="480" stroke-width="1" stroke="black"/>
 			<line id="door" x1="1020" y1="460" x2="1020" y2="480" stroke-width="1" stroke="black"/>
+			<text id="kitchen_Door" x="970" y="460" font-size="18" font-family="arial" fill="black">03</text>
 		</g>
+
+		<text id="Main_light" x="1025" y="250" font-size="18" font-family="arial" fill="black">06</text>
+
 	</g>
 </svg>
