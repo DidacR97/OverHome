@@ -13,19 +13,19 @@ body {
     background: linear-gradient(#F7EFE2,#F25C00,#F25C00, #F70025);
 }
 #logo{
-	margin-left: 27%;
+	margin-left: 29%;
 	width: 40%
 }
 
 #login_box{
 	background: #F9A603;
-	margin-left: 30%;
+	margin-left: 25%;
 	padding: 5%;
 	width: 50%;
 }
 /* Bordered form */
 form {
-    border: 3px solid #f1f1f1;
+    /*border: 3px solid #f1f1f1;*/
 }
 
 /* Full-width inputs */
