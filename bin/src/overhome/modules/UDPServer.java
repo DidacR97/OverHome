@@ -8,26 +8,19 @@ import java.util.logging.SimpleFormatter;
 
 public class UDPServer {
 
+    private static String args[];
+    private static Logger logger = Logger.getLogger("UDPServer");
+    private static DatagramSocket socketUDP;
+
     public static String start_UPD_Server(String args[]) {
         if (args.length == 0) usage();
-
-        String logFilePath = "C:\\bin\\logs\\ServerUDP.log";
-
         try {
-            //logger
-            Logger logger =  Logger.getLogger("UDPServer");
-            FileHandler fileHandler;
-
-            System.out.println("Log file in: " + logFilePath);
-
-            fileHandler = new FileHandler(logFilePath, 1024*1024, 1, true);
-            logger.addHandler(fileHandler);
-            SimpleFormatter simpleFormatter = new SimpleFormatter();
-            fileHandler.setFormatter(simpleFormatter);
-
-
-            DatagramSocket socketUDP = new DatagramSocket(Integer.valueOf(args[0]));
-            byte[] buffer = new byte[1000];
+            socketUDP = new DatagramSocket(Integer.valueOf(args[0]));
+        } catch (SocketException e) {
+            e.printStackTrace();
+            System.exit(1);
+        }
+        byte[] buffer = new byte[1000];
 
             System.out.println("Listening packets from port: " + args[0] + "...");
 
@@ -35,23 +28,41 @@ public class UDPServer {
             DatagramPacket datagramPacket = new DatagramPacket(buffer, buffer.length);
 
             // Read DatagramSocket
+        try {
             socketUDP.receive(datagramPacket);
-
+        } catch (IOException e) {
+            e.printStackTrace();
+            System.exit(-1);
+        }
+        if (init_Logger_Server_UDP()){
             String debug = "\n------------MESSAGE RECIVED-------------\n" +
                     "Datagram recived from host: " + datagramPacket.getAddress() + "\n" +
                     "remote port: " + datagramPacket.getPort() + "\n" +
                     "Content recived: " + new String(datagramPacket.getData()) + "\n";
 
             logger.info(debug);
+        }
 
             return new String(datagramPacket.getData());
+    }
 
-        } catch (SocketException e) {
-            System.out.println("Socket: " + e.getMessage());
+    private static boolean init_Logger_Server_UDP() {
+        String logFilePath = "C:\\bin\\logs\\ServerUDP.log";
+
+        try {
+            //logger
+
+            System.out.println("Log file in: " + logFilePath);
+
+            FileHandler fileHandler = new FileHandler(logFilePath, 1024 * 1024, 1, true);
+            logger.addHandler(fileHandler);
+            SimpleFormatter simpleFormatter = new SimpleFormatter();
+            fileHandler.setFormatter(simpleFormatter);
+            return true;
         } catch (IOException e) {
-            System.out.println("IO: " + e.getMessage() + ", couldn't initiate logging in " + logFilePath);
+            e.printStackTrace();
+            return false;
         }
-        return "Server error!!";
     }
 
     private static void usage(){
