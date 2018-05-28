@@ -3,15 +3,16 @@ public class UpdateDB implements Runnable {
 
     @Override
     public void run() {
-        System.out.println("Ha entrado en UpdateUDP");
         Main.syn.doWait();
-        System.out.println("PacketeUDPRecivido");
+        System.out.println("UDP_Packet_Received");
 
-        String string = Main.stack.pop();
+        String packet = Main.stack.pop();
 
-        System.out.println(string.equals("00010001;didac"));
+        String []action;
 
-        InfoManager.updateInfo(string);
+        action = packet.split(",");
+
+        InfoManager.updateInfo(action[0]);
 
     }
 
