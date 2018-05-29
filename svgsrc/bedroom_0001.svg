@@ -13,7 +13,6 @@
 		<g id="bedroom_0001_dinningroom_door">
 			<line id="door" x1="440" y1="360" x2="460" y2="360" stroke-width="1" stroke="black"/>
 			<line id="door" x1="440" y1="440" x2="460" y2="440" stroke-width="1" stroke="black"/>
-			<text id="bedroom_Door" x="460" y="410" font-size="20" font-family="arial" fill="black">04</text>
 		</g>
 
 		<rect id="table2" x="400" y="600" height="120" width="50" stroke-width="2" stroke="black"  fill="#FFEEE2"/>
