@@ -27,7 +27,6 @@
 		<g id="kitchen_0001_dinningroom_door">
 			<line id="door" x1="940" y1="460" x2="940" y2="480" stroke-width="1" stroke="black"/>
 			<line id="door" x1="1020" y1="460" x2="1020" y2="480" stroke-width="1" stroke="black"/>
-			<text id="kitchen_Door" x="970" y="460" font-size="18" font-family="arial" fill="black">03</text>
 		</g>
 
 		<text id="Main_light" x="1025" y="250" font-size="18" font-family="arial" fill="black">06</text>
