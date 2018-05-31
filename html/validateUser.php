@@ -25,11 +25,12 @@
 
 	$result = $conexion->query($sql);
 
-	if ($result->num_rows > 0) {
+	if ($result == false || $result->num_rows == 0) {
+		header('Location: http://35.204.23.49');
+		
+	}elseif($result->num_rows > 0){
 		header('Location: http://35.204.23.49/overhome/html/mainView.php?param=general_0001');
 		session_start();
-	}else{
-		header('Location: http://35.204.23.49');
 	}
 
  	mysqli_close($conexion);

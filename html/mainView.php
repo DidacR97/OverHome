@@ -9,6 +9,7 @@
 	$tbl_values = "oh_value";
 	$zones = array();
 	$items = array();
+	$err = -1;
 
 	$conexion = new mysqli($host_db, $user_db, $pass_db, $db_name);
 
@@ -37,6 +38,14 @@
 		$name = $result->fetch_assoc();
 		$svg = $name['SVG_NAME'];
 		$zone_name = $name['DESCRIPTION'];
+	}else{
+		$n= "general_0001";
+		$sql = "SELECT * FROM $tbl_name WHERE NAME = '$n'";
+		$result = $conexion->query($sql);
+		$name = $result->fetch_assoc();
+		$svg = $name['SVG_NAME'];
+		$zone_name = $name['DESCRIPTION'];
+		$err = 1;
 	}
 
 	$sql = "SELECT * FROM $tbl_name";
@@ -52,7 +61,7 @@
 	if($n == "general_0001"){
 		$sql = "SELECT I.id,I.DESCRIPTION,Z.NAME,V.VALUE FROM $tbl_items I 
 				JOIN $tbl_name as Z ON I.ZONE_ID = Z.ID 
-				JOIN $tbl_values as V ON I.id = V.OBJECT_ID ORDER BY Z.ID desc";
+				JOIN $tbl_values as V ON I.id = V.OBJECT_ID ORDER BY I.ID";
 	}else {
 		$sql = "SELECT I.id,I.DESCRIPTION,Z.NAME,V.VALUE FROM $tbl_items I 
 				JOIN $tbl_name as Z ON I.ZONE_ID = Z.ID 
@@ -90,6 +99,7 @@ JOIN oh_value as V ON I.id = V.OBJECT_ID
 echo'
 <html>
 	<head>
+		<title>Overhome</title>
 		<link rel="stylesheet" type="text/css" href="../styles/estilo.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script>
@@ -102,8 +112,18 @@ echo'
     			}
                 );
             };
-        </script>
-	
+            </script>
+            ';
+		if($err == 1){
+			echo'
+			<script>
+				function() {
+				    alert("URL Changed");
+				}
+			</script>';
+		}
+
+    echo'
 	</head>
 	<body>
 		<header>
@@ -179,6 +199,6 @@ echo'
 	</body>
 </html>';
 
-header("Refresh: 3; URL='http://35.204.23.49/overhome/html/mainView.php?param=$n'");
+header("Refresh: 1.5; URL='http://35.204.23.49/overhome/html/mainView.php?param=$n'");
 
 ?>

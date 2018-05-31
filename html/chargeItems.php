@@ -5,7 +5,7 @@ session_start();
 	$server = "localhost";
 	$id = $_POST["id"];
 	$port = 12000;
-	$user = "guest";
+	$user = "didac";
 
 if (!extension_loaded('sockets')) {
     die('The sockets extension is not loaded.');
@@ -23,7 +23,7 @@ echo "Socket created \n";
 //Communication loop
 
     //Take some input to send
-    $input = $id.";".$user;
+    $input = $id.";".$user.",";
      
     //Send the message to the server
     if( ! socket_sendto($sock, $input , strlen($input) , 0 , $server , $port))
